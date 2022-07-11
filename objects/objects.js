@@ -59,7 +59,16 @@ console.log("\n");
 /////////////////////////////
 console.log("Task #2 \n");
 
-
+let templateArray = [0,1,2,3,4,5,6,7,8,9,10];
+let templateArrayReverse = [];
+function reverseArray (arrayTarget) {
+	for (let i = 0; i < arrayTarget.length; i++) {
+		element = arrayTarget[i];
+		templateArrayReverse.unshift(element);
+	}
+	return templateArrayReverse;
+}
+console.log(reverseArray(templateArray));
 
 
 
