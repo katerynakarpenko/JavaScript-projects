@@ -70,13 +70,13 @@ function reverseArray (arrayTarget) {
 }
 console.log(reverseArray(templateArray));
 
-
-
 console.log("\n");
 console.log("\n");
 
 /////////////////////////////
 console.log("Task #3.1 \n");
+
+console.log(-10%3);
 
 
 
