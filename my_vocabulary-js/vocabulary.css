@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 580px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+.enter-form {
+  font-size: 18px;
+  line-height: 120%;
+  margin-top: 70px;
+}
+
+@media (min-width: 640px) {
+  .enter-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.input-wrapper {
+  margin: 10px 0 40px;
+}
+
+@media (min-width: 640px) {
+  .input-wrapper:first-child {
+    margin-right: 10px;
+    padding: 5px;
+  }
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 90%;
+  height: 44px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+@media (min-width: 640px) {
+  input {
+    width: 75%;
+    min-width: 200px;
+    margin-top: 15px;
+    margin-left: 2px;
+  }
+}
+
+.button-add {
+  max-width: 200px;
+  height: 44px;
+  padding: 10px 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 170%;
+  color: #fff;
+  background-color: #0000ff;
+  border: 1px solid #000;
+  border-radius: 16px;
+}
+
+@media (min-width: 640px) {
+  .button-add {
+    margin-left: 20px;
+  }
+}
+
+.table-words {
+  font-weight: 18px;
+  line-height: 150%;
+}
+
+tr {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+td {
+  min-width: 100px;
+}
+
+.button-remove {
+  min-width: unset;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #000;
+}

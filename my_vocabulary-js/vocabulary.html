@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, minimum-scale=1, user-scalable=yes" />
     <link type="text/css" rel="stylesheet" href="vocabulary.css">
     <title>My vocabulary</title>
   </head>
   <body>
-    <h1>My personal vocabulary</h1>
-    <input />
-    <input />
+    <div class="container">
+      <h1>My personal vocabulary</h1>
+      <div class="enter-form">
+        <div class="input-wrapper">
+          <label for="eng-word"> Enter a word:</label>
+          <input class="eng-word" name="eng-word" id="eng-word" placeholder="English word" />
+        </div>
+        <div class="input-wrapper">
+          <label for="ua-word"> Enter the translation:</label>
+          <input class="ua-word" name="ua-word" id="ua-word" placeholder="Ukrainian word"/>
+        </div>
 
+        <div class="button-add">Add</div>
+      </div>
+
+      <div class="table-wrapper">
+        <h2>Saved words</h2>
+        <table class="table-words">
+        </table>
+      </div>
+    </div>
+
+    <script src="vocabulary.js"></script>
   </body>
 </html>
 
