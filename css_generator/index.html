@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, minimum-scale=1, user-scalable=yes" />
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <title>CSS generator</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div><a href="../main.html">Homepage</a></div>
+      <h1>CSS generator</h1>
+      <h2>Generate border-radius:</h2>
+      <div class="wrapper">
+        <div class="wrapper__top">
+          <div class="wrapper__range ">
+            <input type="range" 
+                  id="top-left-range"
+                  class="input top-left-range"
+                  min="0"
+                  max="100"
+                  value="0"
+            >
+            <div class="result result-top-left">0</div>
+          </div>
+          <div class="wrapper__range">
+            <input type="range" 
+                  id="top-right-range"
+                  class="input top-right-range"
+                  min="0"
+                  max="100"
+                  value="0"
+            >
+            <div class="result result-top-right">0</div>
+          </div>
+        </div>
+        <div class="wrapper__center">
+          <div class="cube"></div>
+        </div>
+        <div class="wrapper__bottom">
+          <div class="wrapper__range">
+            <input type="range" 
+                  id="top-bottom-range"
+                  class="input bottom-left-range"
+                  min="0"
+                  max="100"
+                  value="0"
+            >
+            <div class="result result-bottom-left">0</div>
+          </div>
+          <div class="wrapper__range">
+            <input type="range" 
+                  id="top-bottom-range"
+                  class="input bottom-right-range"
+                  min="0"
+                  max="100"
+                  value="0"
+            >
+            <div class="result result-bottom-right">0</div>
+          </div>
+          
+        </div>
+        <div class="results">
+          <button class="btn-get-result">Get result</button>
+          <div class="ready-result"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+        
