@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Fira+Sans+Condensed Medium";
   src: url("fonts/FiraSansCondensed-Medium.ttf"); }
@@ -39,9 +38,10 @@ button.typical-btn {
 }
 button.typical-btn.make-an-order {
   max-width: 258px;
-  height: 59px; 
+  height: 59px;
+  display: block;
+  margin: 0 auto; 
 }
-
 .creator-pizza {
   justify-content: center;
   margin-bottom: 50px; 
@@ -50,10 +50,15 @@ button.typical-btn.make-an-order {
 .creator-pizza h2 {
   font-style: normal;
   font-weight: 800;
-  font-size: 44px;
+  font-size: 30px;
   line-height: 51px;
   text-align: center;
   margin-bottom: 45px; 
+}
+@media (min-width: 768px) {
+  .creator-pizza h2 {
+    font-size: 44px;
+  }
 }
 .creator-pizza .topping-item {
   margin-bottom: 20px;
@@ -196,7 +201,6 @@ button.typical-btn.make-an-order {
 }
 
 .select-drink-wrapper {
-  height: 180px;
   border: 2px solid rgba(255, 255, 255, 0.9);
   border-left: none;
   border-right: none;
@@ -212,18 +216,35 @@ button.typical-btn.make-an-order {
   height: 100%; 
 }
 .select-drink-wrapper .flex-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid; 
+  grid-template-columns: auto auto;
   height: 100%; 
 }
+@media (min-width: 640px) {
+  .select-drink-wrapper .flex-wrapper {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (min-width: 768px) {
+  .select-drink-wrapper .flex-wrapper {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media (min-width: 1200px) {
+  .select-drink-wrapper .flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; 
+  }
+}
 .select-drink-wrapper .flex-wrapper .select-drink-item {
-  width: 133px;
-  height: 133px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   position: relative;
   cursor: pointer;
   transition: all .2s ease-in-out; 
+  margin: 10px;
 }
 .select-drink-wrapper .flex-wrapper .select-drink-item:hover {
   border: 2px solid white; 
@@ -250,18 +271,21 @@ button.typical-btn.make-an-order {
 .select-drink-wrapper .flex-wrapper .select-drink-item .summa {
   right: 0; 
 }
-
 .option-delivery {
   margin-bottom: 130px; 
 }
-.option-delivery .option-delivery-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
+@media (min-width: 768px) {
+  .option-delivery .option-delivery-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
 }
 .option-delivery .total-amount {
   display: flex;
+  justify-content: center;
   align-items: center; 
+  margin-bottom: 20px;
 }
 .option-delivery .total-amount .text {
   font-style: normal;
@@ -277,7 +301,6 @@ button.typical-btn.make-an-order {
   line-height: 29px;
   color: rgba(255, 255, 255, 0.9); 
 }
-
 .modal-window {
   position: fixed;
   z-index: 10;
@@ -287,7 +310,6 @@ button.typical-btn.make-an-order {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .modal-window__content {
   position: absolute;
   margin: auto;
@@ -307,7 +329,6 @@ button.typical-btn.make-an-order {
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
-
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
@@ -318,7 +339,6 @@ button.typical-btn.make-an-order {
     opacity: 1
   }
 }
-
 @keyframes animatetop {
   from {
     top: -300px;
@@ -329,7 +349,6 @@ button.typical-btn.make-an-order {
     opacity: 1
   }
 }
-
 .modal-window__content p {
   margin-top: 10px;
   font-size: 13px;
@@ -349,7 +368,6 @@ button.typical-btn.make-an-order {
   color: rgba(255, 255, 255, 0.9);
   border: 2px solid #000;
 }
-
 .modal-window__submit-btn:hover {
   background-color: rgba(255, 255, 255, 0.9);
   color: #000;
